@@ -25566,10 +25566,15 @@ var _entities = __webpack_require__(238);
 
 var _entities2 = _interopRequireDefault(_entities);
 
+var _session = __webpack_require__(287);
+
+var _session2 = _interopRequireDefault(_session);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _redux.combineReducers)({
-  entities: _entities2.default
+  entities: _entities2.default,
+  session: _session2.default
 });
 
 /***/ }),
@@ -29757,6 +29762,12 @@ exports.default = function () {
     )
   );
 };
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: SyntaxError: Unexpected token, expected : (13:33)\n\n\u001b[0m \u001b[90m 11 | \u001b[39m    \u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mfreeze(state)\u001b[33m;\u001b[39m\n \u001b[90m 12 | \u001b[39m    \u001b[36mswitch\u001b[39m (action\u001b[33m.\u001b[39mtype) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 | \u001b[39m        \u001b[36mcase\u001b[39m \u001b[33mRECEIVE_CURRENT_USER\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    | \u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 | \u001b[39m            \u001b[36mreturn\u001b[39m \u001b[33mObject\u001b[39m\u001b[33m.\u001b[39massign({}\u001b[33m,\u001b[39m { currentUser\u001b[33m:\u001b[39m action\u001b[33m.\u001b[39muser })\u001b[33m;\u001b[39m\n \u001b[90m 15 | \u001b[39m        \u001b[36mcase\u001b[39m \u001b[33mLOGOUT_CURRENT_USER\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 16 | \u001b[39m            \u001b[36mreturn\u001b[39m _nullSession\u001b[33m;\u001b[39m\u001b[0m\n");
 
 /***/ })
 /******/ ]);
